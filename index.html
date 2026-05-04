@@ -1,0 +1,558 @@
+﻿<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KINGYM Fitness Center & King Padel — Λαγονήσι</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ====== NAVIGATION ====== -->
+<header>
+  <nav id="navbar">
+    <a href="#hero">
+      <img src="images/mainlogo.jpg" alt="KinGym Fitness Center Logo" class="nav-logo">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#hero">Αρχική</a></li>
+      <li><a href="#services">Υπηρεσίες</a></li>
+      <li><a href="#schedule">Πρόγραμμα</a></li>
+      <li><a href="#padel">Padel</a></li>
+      <li><a href="#booking">Κράτηση</a></li>
+      <li><a href="#contact">Επικοινωνία</a></li>
+    </ul>
+    <a href="#booking" class="nav-cta nav-links">Κράτηση Γηπέδου</a>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#hero" onclick="toggleMenu()">Αρχική</a>
+  <a href="#services" onclick="toggleMenu()">Υπηρεσίες</a>
+  <a href="#schedule" onclick="toggleMenu()">Πρόγραμμα</a>
+  <a href="#padel" onclick="toggleMenu()">Padel</a>
+  <a href="#booking" onclick="toggleMenu()">Κράτηση</a>
+  <a href="#contact" onclick="toggleMenu()">Επικοινωνία</a>
+</div>
+
+<main>
+
+  <!-- ====== HERO ====== -->
+  <section id="hero">
+    <div class="hero-bg" style="background-image:url('images/newgym.jpg');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <img src="images/mainlogo.jpg" alt="KinGym Logo" class="hero-logo">
+      <div class="hero-tag">Λαγονήσι, Αττική · Fitness &amp; Padel</div>
+      <h1 class="hero-headline">
+        Καλώς ήρθατε<br>
+        <span class="line2">στο KINGYM</span>
+      </h1>
+      <p class="hero-sub">Ο απόλυτος προορισμός Fitness &amp; Padel στο Λαγονήσι. Σύγχρονες εγκαταστάσεις, επαγγελματικό προσωπικό και 2 premium γήπεδα padel.</p>
+      <div class="hero-actions">
+        <a href="#schedule" class="btn-primary">Δείτε το Πρόγραμμα</a>
+        <a href="#padel" class="btn-outline">King Padel Courts</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-dot"></div>
+      Scroll
+    </div>
+  </section>
+
+  <!-- ====== TICKER ====== -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-inner">
+      <span class="ticker-item">KINGYM</span><span class="ticker-item ticker-sep">◆</span>
+      <span class="ticker-item">FITNESS CENTER</span><span class="ticker-item ticker-sep">◆</span>
+      <span class="ticker-item">KING PADEL ΛΑΓΟΝΗΣΙ</span><span class="ticker-item ticker-sep">◆</span>
+      <span class="ticker-item">PILATES · TRX · CROSSFIT</span><span class="ticker-item ticker-sep">◆</span>
+      <span class="ticker-item">2 ΓΗΠΕΔΑ PADEL</span><span class="ticker-item ticker-sep">◆</span>
+      <span class="ticker-item">PERSONAL TRAINING</span><span class="ticker-item ticker-sep">◆</span>
+      <span class="ticker-item">KINGYM</span><span class="ticker-item ticker-sep">◆</span>
+      <span class="ticker-item">FITNESS CENTER</span><span class="ticker-item ticker-sep">◆</span>
+      <span class="ticker-item">KING PADEL ΛΑΓΟΝΗΣΙ</span><span class="ticker-item ticker-sep">◆</span>
+      <span class="ticker-item">PILATES · TRX · CROSSFIT</span><span class="ticker-item ticker-sep">◆</span>
+      <span class="ticker-item">2 ΓΗΠΕΔΑ PADEL</span><span class="ticker-item ticker-sep">◆</span>
+      <span class="ticker-item">PERSONAL TRAINING</span><span class="ticker-item ticker-sep">◆</span>
+    </div>
+  </div>
+
+  <!-- ====== STATS BAR ====== -->
+  <div class="stats-bar">
+    <div class="stats-grid">
+      <div class="stat-item fade-in">
+        <div class="stat-num">4.9★</div>
+        <div class="stat-label">Google Rating</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-num">190+</div>
+        <div class="stat-label">Αξιολογήσεις</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-num">2</div>
+        <div class="stat-label">Γήπεδα Padel</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-num">6πμ</div>
+        <div class="stat-label">Ανοίγουμε Καθημερινά</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== SERVICES ====== -->
+  <section id="services">
+    <div class="services-intro fade-in">
+      <div class="section-label">Υπηρεσίες</div>
+      <h2 class="section-title">Ό,τι Χρειάζεσαι<br><span class="accent">Σε Έναν Χώρο</span></h2>
+    </div>
+    <div class="services-grid">
+
+      <!-- Fitness Card -->
+      <article class="service-card fade-in" style="position:relative;">
+        <div class="service-bg-img" style="background-image:url('images/gymphoto.jpg');"></div>
+        <img src="images/mainlogo.jpg" alt="KinGym Fitness" class="service-card-logo">
+        <div class="service-card-tag">Γυμναστήριο</div>
+        <h3 class="service-card-title">Fitness<br>Center</h3>
+        <p class="service-card-desc">Σύγχρονες εγκαταστάσεις με εξοπλισμό υψηλών προδιαγραφών. Από αρχάριους έως επαγγελματίες — ένα γυμναστήριο για όλους.</p>
+        <ul class="service-list">
+          <li>Σύγχρονος Εξοπλισμός Technogym</li>
+          <li>Personal Training (ατομικά &amp; mini groups)</li>
+          <li>Pilates Reformer</li>
+          <li>Ομαδικά Προγράμματα (Pilates, TRX, Crossfit Mix)</li>
+          <li>Kangoo Jumps &amp; Hips &amp; Abs</li>
+          <li>Αποδυτήρια &amp; Χώροι Ξεκούρασης</li>
+        </ul>
+        <a href="#schedule" class="btn-primary">Δείτε Πρόγραμμα</a>
+      </article>
+
+      <!-- Padel Card -->
+      <article class="service-card fade-in" style="position:relative;">
+        <div class="service-bg-img" style="background-image:url('images/padelphoto.jpeg');"></div>
+        <img src="images/padellogo.jpg" alt="King Padel Lagonisi" class="service-card-logo" style="position:relative;z-index:1;">
+        <div class="service-card-tag" style="position:relative;z-index:1;">King Padel</div>
+        <h3 class="service-card-title" style="position:relative;z-index:1;">Premium<br>Padel Courts</h3>
+        <p class="service-card-desc" style="position:relative;z-index:1;">Δύο επαγγελματικά γήπεδα padel με γυάλινα τοιχώματα και υψηλής ποιότητας φωτισμό για παιχνίδι όλο το 24ωρο.</p>
+        <ul class="service-list" style="position:relative;z-index:1;">
+          <li>2 Premium Γήπεδα Padel</li>
+          <li>Γυάλινα Τοιχώματα &amp; LED Φωτισμός</li>
+          <li>Μαθήματα Padel για Όλα τα Επίπεδα</li>
+          <li>Τουρνουά &amp; Leagues</li>
+          <li>Ενοικίαση Ρακετών</li>
+          <li>Online Κράτηση Γηπέδου</li>
+        </ul>
+        <a href="#padel" class="btn-primary" style="position:relative;z-index:1;">Κράτηση Γηπέδου</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ====== BOOKING ====== -->
+  <section id="booking" style="
+    padding:80px 32px 100px; position:relative; overflow:hidden;
+    background:var(--dark);">
+
+    <!-- Ambient glow -->
+    <div style="position:absolute;top:-100px;left:-100px;width:500px;height:500px;
+      background:radial-gradient(circle,rgba(14,244,13,0.05) 0%,transparent 65%);
+      pointer-events:none;"></div>
+    <div style="position:absolute;bottom:-80px;right:-80px;width:400px;height:400px;
+      background:radial-gradient(circle,rgba(14,244,13,0.04) 0%,transparent 65%);
+      pointer-events:none;"></div>
+
+    <div style="max-width:1200px;margin:0 auto;position:relative;z-index:1;">
+
+      <!-- Header -->
+      <div class="fade-in" style="margin-bottom:44px;">
+        <div class="section-label">Online Κράτηση</div>
+        <h2 class="section-title">Κλείσε Γήπεδο<br><span class="accent">King Padel</span></h2>
+      </div>
+
+      <!-- Two-column layout: info left, iframe right -->
+      <div style="display:grid;grid-template-columns:300px 1fr;gap:24px;align-items:start;" class="fade-in bk-grid">
+
+        <!-- LEFT: info panel -->
+        <div style="display:flex;flex-direction:column;gap:4px;">
+
+          <!-- Hours -->
+          <div style="background:var(--card);border:1px solid var(--border);padding:28px 24px;
+            transition:border-color 0.3s;"
+            onmouseover="this.style.borderColor='rgba(14,244,13,0.4)'"
+            onmouseout="this.style.borderColor='var(--border)'">
+            <div style="font-family:var(--font-mono);font-size:0.58rem;letter-spacing:4px;
+              text-transform:uppercase;color:var(--green);margin-bottom:18px;">Ωράριο</div>
+            <div style="display:flex;flex-direction:column;gap:0;">
+              <div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--border);">
+                <span style="font-size:0.85rem;color:var(--white);">Δευτ – Παρ</span>
+                <span style="font-family:var(--font-mono);font-size:0.7rem;color:var(--green);">08:30–23:00</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--border);">
+                <span style="font-size:0.85rem;color:var(--white);">Σάββατο</span>
+                <span style="font-family:var(--font-mono);font-size:0.7rem;color:var(--green);">10:00–18:00</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;padding:9px 0;">
+                <span style="font-size:0.85rem;color:var(--white);">Κυριακή</span>
+                <span style="font-family:var(--font-mono);font-size:0.7rem;color:var(--green);">10:00–18:00</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature tiles 2×2 -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;">
+            <div style="background:var(--card);border:1px solid var(--border);padding:18px 16px;transition:border-color 0.2s;"
+              onmouseover="this.style.borderColor='rgba(14,244,13,0.4)'"
+              onmouseout="this.style.borderColor='var(--border)'">
+              <div style="font-size:1.3rem;margin-bottom:7px;">🏟️</div>
+              <div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--white);">2 Γήπεδα</div>
+              <div style="font-size:0.78rem;color:var(--muted);margin-top:3px;line-height:1.4;">Γυάλινα τοιχώματα</div>
+            </div>
+            <div style="background:var(--card);border:1px solid var(--border);padding:18px 16px;transition:border-color 0.2s;"
+              onmouseover="this.style.borderColor='rgba(14,244,13,0.4)'"
+              onmouseout="this.style.borderColor='var(--border)'">
+              <div style="font-size:1.3rem;margin-bottom:7px;">⚡</div>
+              <div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--white);">Άμεση</div>
+              <div style="font-size:0.78rem;color:var(--muted);margin-top:3px;line-height:1.4;">Επιβεβαίωση</div>
+            </div>
+            <div style="background:var(--card);border:1px solid var(--border);padding:18px 16px;transition:border-color 0.2s;"
+              onmouseover="this.style.borderColor='rgba(14,244,13,0.4)'"
+              onmouseout="this.style.borderColor='var(--border)'">
+              <div style="font-size:1.3rem;margin-bottom:7px;">🎓</div>
+              <div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--white);">Μαθήματα</div>
+              <div style="font-size:0.78rem;color:var(--muted);margin-top:3px;line-height:1.4;">Όλα τα επίπεδα</div>
+            </div>
+            <div style="background:var(--card);border:1px solid var(--border);padding:18px 16px;transition:border-color 0.2s;"
+              onmouseover="this.style.borderColor='rgba(14,244,13,0.4)'"
+              onmouseout="this.style.borderColor='var(--border)'">
+              <div style="font-size:1.3rem;margin-bottom:7px;">📞</div>
+              <div style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--white);">Τηλέφωνο</div>
+              <div style="font-size:0.78rem;color:var(--muted);margin-top:3px;line-height:1.4;"><a href="tel:2291023994" style="color:var(--green);text-decoration:none;">2291 023994</a></div>
+            </div>
+          </div>
+
+          <!-- External link -->
+          <a href="https://kingpadel.setmore.com" target="_blank" rel="noopener"
+            style="display:block;background:var(--card);border:1px solid var(--border);padding:14px 20px;
+            font-family:var(--font-mono);font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;
+            color:var(--muted2);text-align:center;text-decoration:none;transition:all 0.2s;"
+            onmouseover="this.style.borderColor='var(--green)';this.style.color='var(--green)'"
+            onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted2)'">
+            ↗ Άνοιγμα σε νέο παράθυρο
+          </a>
+        </div>
+
+        <!-- RIGHT: Setmore iframe embedded directly -->
+        <div style="position:relative;border:1px solid var(--border);background:var(--card);overflow:hidden;">
+          <!-- Skeleton loader -->
+          <div id="smSkeleton" style="
+            position:absolute;inset:0;display:flex;flex-direction:column;
+            align-items:center;justify-content:center;gap:16px;
+            background:var(--card);z-index:1;pointer-events:none;min-height:680px;">
+            <div style="width:36px;height:36px;border:2px solid var(--border);
+              border-top-color:var(--green);border-radius:50%;animation:smSpin 0.8s linear infinite;"></div>
+            <span style="font-family:var(--font-mono);font-size:0.62rem;letter-spacing:3px;
+              text-transform:uppercase;color:var(--muted);">Φόρτωση…</span>
+          </div>
+          <!-- The iframe — loads immediately on page load -->
+          <iframe
+            src="https://kingpadel.setmore.com"
+            allow="payment"
+            style="border:none;display:block;width:100%;min-height:680px;"
+            onload="document.getElementById('smSkeleton').style.display='none';">
+          </iframe>
+        </div>
+
+      </div><!-- /grid -->
+    </div>
+  </section>
+
+  <!-- ====== SCHEDULE ====== -->
+  <section id="schedule">
+    <div class="schedule-header fade-in">
+      <div class="section-label">Εβδομαδιαίο Πρόγραμμα</div>
+      <h2 class="section-title">Ομαδικά<br><span class="accent">Μαθήματα</span></h2>
+    </div>
+
+    <div class="schedule-wrapper fade-in">
+      <table class="schedule-table" role="table" aria-label="Εβδομαδιαίο Πρόγραμμα Μαθημάτων">
+        <thead>
+          <tr>
+            <th scope="col">Δευτέρα</th>
+            <th scope="col">Τρίτη</th>
+            <th scope="col">Τετάρτη</th>
+            <th scope="col">Πέμπτη</th>
+            <th scope="col">Παρασκευή</th>
+            <th scope="col">Σάββατο</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <!-- Δευτέρα -->
+            <td>
+              <div class="cell-inner">
+                <div class="class-block">
+                  <div class="class-name">Pilates</div>
+                  <div class="class-time">8:30 – 9:30</div>
+                </div>
+                <div class="class-block">
+                  <div class="class-name">Pilates</div>
+                  <div class="class-time">18:00 – 19:00</div>
+                </div>
+                <div class="class-block extra">
+                  <div class="class-name">TRX</div>
+                  <div class="class-time">19:00 – 20:00</div>
+                  <div><span class="class-extra">extra</span></div>
+                </div>
+                <div class="class-block extra">
+                  <div class="class-name">Kangoo Jumps</div>
+                  <div class="class-time">20:00 – 21:00</div>
+                  <div><span class="class-extra">extra</span></div>
+                </div>
+              </div>
+            </td>
+            <!-- Τρίτη -->
+            <td>
+              <div class="cell-inner">
+                <div class="class-block">
+                  <div class="class-name">Pilates</div>
+                  <div class="class-time">8:30 – 9:30</div>
+                </div>
+                <div class="class-block">
+                  <div class="class-name">Hips &amp; Abs</div>
+                  <div class="class-time">19:00 – 20:00</div>
+                </div>
+                <div class="class-block">
+                  <div class="class-name">Crossfit Mix</div>
+                  <div class="class-time">20:30 – 21:30</div>
+                </div>
+              </div>
+            </td>
+            <!-- Τετάρτη -->
+            <td>
+              <div class="cell-inner">
+                <div class="class-block">
+                  <div class="class-name">Hips &amp; Abs</div>
+                  <div class="class-time">8:30 – 9:30</div>
+                </div>
+                <div class="class-block">
+                  <div class="class-name">Pilates</div>
+                  <div class="class-time">19:00 – 20:00</div>
+                </div>
+                <div class="class-block extra">
+                  <div class="class-name">Kangoo Jumps</div>
+                  <div class="class-time">20:00 – 21:00</div>
+                  <div><span class="class-extra">extra</span></div>
+                </div>
+              </div>
+            </td>
+            <!-- Πέμπτη -->
+            <td>
+              <div class="cell-inner">
+                <div class="class-block">
+                  <div class="class-name">Pilates</div>
+                  <div class="class-time">8:30 – 9:30</div>
+                </div>
+                <div class="class-block extra">
+                  <div class="class-name">Streching</div>
+                  <div class="class-time">19:00 – 19:45</div>
+                  <div><span class="class-extra">extra</span></div>
+                </div>
+                <div class="class-block extra">
+                  <div class="class-name">TRX</div>
+                  <div class="class-time">20:30 – 21:30</div>
+                  <div><span class="class-extra">extra</span></div>
+                </div>
+              </div>
+            </td>
+            <!-- Παρασκευή -->
+            <td>
+              <div class="cell-inner">
+                <div class="class-block">
+                  <div class="class-name">Crossfit Mix</div>
+                  <div class="class-time">19:00 – 20:00</div>
+                </div>
+              </div>
+            </td>
+            <!-- Σάββατο -->
+            <td>
+              <div class="cell-inner">
+                <div class="class-block extra">
+                  <div class="class-name">Kangoo Jumps</div>
+                  <div class="class-time">10:30 – 11:30</div>
+                  <div><span class="class-extra">extra</span></div>
+                </div>
+                <div class="class-block extra">
+                  <div class="class-name">Functional Training</div>
+                  <div class="class-time">11:30 – 12:30</div>
+                  <div><span class="class-extra">extra</span></div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="schedule-notes fade-in">
+      <div class="schedule-note">
+        👑 Το γυμναστήριο διαθέτει <strong>Personal Trainers</strong> για ατομικά ή mini groups (2-3 ατόμων)
+      </div>
+      <div class="schedule-note">
+        🏋️ Το γυμναστήριο διαθέτει <strong>Pilates Reformer</strong> — επικοινωνήστε για ατομικά sessions
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PADEL ====== -->
+  <section id="padel">
+    <div class="padel-inner">
+      <div class="section-label fade-in">King Padel Λαγονήσι</div>
+      <h2 class="section-title fade-in">2 Premium<br><span class="accent">Padel Courts</span></h2>
+
+      <div class="padel-layout">
+        <div class="padel-text fade-in">
+          <p>Το <strong>King Padel Λαγονήσι</strong> αποτελεί μέρος του KINGYM και προσφέρει δύο επαγγελματικά γήπεδα padel για παίκτες όλων των επιπέδων.</p>
+          <p>Με γυάλινα τοιχώματα, premium artificial grass και επαγγελματικό φωτισμό LED, τα γήπεδά μας είναι ανοιχτά από νωρίς το πρωί ως αργά το βράδυ.</p>
+
+          <div class="courts-pills">
+            <div class="court-pill">Court 01 — Alpha</div>
+            <div class="court-pill">Court 02 — Beta</div>
+          </div>
+
+          <div class="padel-features" style="margin-top: 28px;">
+            <div class="padel-feature">
+              <div class="padel-feature-icon">🏟️</div>
+              <div class="padel-feature-name">Premium Courts</div>
+              <div class="padel-feature-desc">Γυάλινα τοιχώματα, artificial grass</div>
+            </div>
+            <div class="padel-feature">
+              <div class="padel-feature-icon">💡</div>
+              <div class="padel-feature-name">LED Φωτισμός</div>
+              <div class="padel-feature-desc">Βραδινό παιχνίδι χωρίς περιορισμούς</div>
+            </div>
+            <div class="padel-feature">
+              <div class="padel-feature-icon">🎓</div>
+              <div class="padel-feature-name">Μαθήματα</div>
+              <div class="padel-feature-desc">Για αρχάριους &amp; προχωρημένους</div>
+            </div>
+            <div class="padel-feature">
+              <div class="padel-feature-icon">🏆</div>
+              <div class="padel-feature-name">Τουρνουά</div>
+              <div class="padel-feature-desc">Leagues &amp; ανοιχτές διοργανώσεις</div>
+            </div>
+          </div>
+          <div style="margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="#contact" class="btn-primary">Κράτηση Γηπέδου</a>
+            <a href="https://www.facebook.com/profile.php?id=100054474219196" target="_blank" rel="noopener" class="btn-outline">Facebook Page</a>
+          </div>
+        </div>
+
+        <div class="padel-image-block fade-in">
+          <img src="images/padelcourt.jpg" alt="King Padel Courts Λαγονήσι" class="padel-img-main">
+          <img src="images/padellogo.jpg" alt="King Padel Logo" class="padel-img-logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="section-label fade-in">Επικοινωνία</div>
+      <h2 class="section-title fade-in">Βρείτε<br><span class="accent">μας</span></h2>
+
+      <div class="contact-grid">
+        <div class="contact-info-blocks fade-in">
+          <div class="info-block">
+            <div class="info-label">Διεύθυνση</div>
+            <div class="info-value">Λαγονήσι, Αττική</div>
+          </div>
+          <div class="info-block">
+            <div class="info-label">Τηλέφωνο</div>
+            <div class="info-value"><a href="tel:2291023994">2291 023994</a></div>
+          </div>
+          <div class="info-block">
+            <div class="info-label">Ωράριο Λειτουργίας</div>
+            <div class="info-value" style="font-size:1rem;">
+              <table class="hours-table">
+                <tr><td>Δευτέρα – Παρασκευή</td><td>08:30 – 23:00</td></tr>
+                <tr><td>Σάββατο</td><td>10:00 – 18:00</td></tr>
+                <tr><td>Κυριακή</td><td>10:00 – 18:00</td></tr>
+              </table>
+            </div>
+          </div>
+          <div class="info-block">
+            <div class="info-label">Social Media</div>
+            <div class="social-row">
+              <a href="https://www.facebook.com/profile.php?id=100054474219196" target="_blank" rel="noopener" class="social-link">📘 Facebook</a>
+              <a href="https://maps.google.com/?q=KINGYM+Lagonisi" target="_blank" rel="noopener" class="social-link">📍 Google Maps</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-placeholder fade-in">
+          <div class="map-icon">📍</div>
+          <div class="map-label">Βρείτε μας στον χάρτη</div>
+          <div class="map-address">Λαγονήσι, Αττική</div>
+          <a href="https://maps.google.com/?q=KINGYM+Fitness+Lagonisi" target="_blank" rel="noopener" class="map-link">
+            Άνοιγμα στο Google Maps →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ====== FOOTER ====== -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logos">
+        <img src="images/mainlogo.jpg" alt="KinGym Fitness Center" class="footer-logo">
+        <img src="images/padellogo.jpg" alt="King Padel Lagonisi" class="footer-logo">
+      </div>
+      <p style="font-family: var(--font-mono); font-size: 0.68rem; color: var(--muted); margin-top: 16px; letter-spacing: 1px; line-height: 1.7;">
+        Ο απόλυτος προορισμός<br>Fitness &amp; Padel στο Λαγονήσι.
+      </p>
+    </div>
+    <div>
+      <div class="footer-col-title">Γρήγορες Συνδέσεις</div>
+      <ul class="footer-links">
+        <li><a href="#hero">Αρχική</a></li>
+        <li><a href="#services">Υπηρεσίες</a></li>
+        <li><a href="#schedule">Πρόγραμμα</a></li>
+        <li><a href="#padel">King Padel</a></li>
+        <li><a href="#contact">Επικοινωνία</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Επικοινωνία</div>
+      <ul class="footer-links">
+        <li><a href="tel:2291023994">📞 2291 023994</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100054474219196" target="_blank" rel="noopener">📘 Facebook</a></li>
+        <li><a href="https://maps.google.com/?q=KINGYM+Lagonisi" target="_blank" rel="noopener">📍 Λαγονήσι, Αττική</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 KINGYM Fitness Center &amp; King Padel Λαγονήσι. Όλα τα δικαιώματα διατηρούνται.</div>
+    <div class="footer-gdpr">
+      <a href="#">Πολιτική Απορρήτου</a>
+      <a href="#">Όροι Χρήσης</a>
+      <a href="#">GDPR</a>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
